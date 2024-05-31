@@ -4,7 +4,8 @@
 *.pyc
 
 # ignore  data
-data/
+*.h5
+Data/mimic/
 
 # ignore virtual environment files 
 .venv/
