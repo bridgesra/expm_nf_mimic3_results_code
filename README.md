@@ -138,7 +138,7 @@ To create accuracy and privacy results for each training <type> (nonprivate/dpsg
 - We ran this three times, two hyperparameter searching runs and a third final run. 
     1. first run uses `h_pass = "first", use_full_train = False` (broad hyperparmeter search w/ validation on dev set.)
     2. second run uses `h_pass = "refined", use_full_train = False` (refined hyperparms based results of first run w/ validation on dev set.)
-    3. final results run uses `h_pass = "refined", use_full_train = False` (best hyperparms previously observed are use, now with validation on the test set.) 
+    3. final results run uses `h_pass = "refined", use_full_train = True` (best hyperparms previously observed are use, now with validation on the test set.) 
 - To set up the script:
     - lines ~15 are the GPU/CPU setup and will have to be configured for your enviornment (`gpu_names, device_ids, use_gpu = setup_devices(devices)`)
     - lines ~17 are parameters to set as follows: 
